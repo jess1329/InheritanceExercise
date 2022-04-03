@@ -29,6 +29,41 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var myBird = new Bird();
+            myBird.WingColor = "blue";
+            myBird.CanFly = true;
+            myBird.WillMigrate = true;
+            myBird.BeakLength = 3.5;
+
+            var lizard = new Reptile()
+            {
+                IsColdBlooded = true,
+                IsScaly = true,
+                Habitat = "swamp",
+                CanGrowTail = true
+
+
+
+
+            };
+
+            var myAnimals = new Animal[] { myBird, lizard };
+
+            foreach (var animal in myAnimals) 
+            {
+                Console.WriteLine($ "Alive:{animal.isAlive}");
+                Console.WriteLine($"Age: {animal.Age} years old");
+                Console.WriteLine($"It has {animal.LegCount} legs");
+                Console.WriteLine($"It lives by {animal.LandSeaAir}");
+            
+            
+            
+            
+            }
+
+
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
